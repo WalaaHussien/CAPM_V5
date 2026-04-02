@@ -1,0 +1,15 @@
+﻿6658938 Increase transparency and remove blur in Hero section
+bb317df Update repo url to CAPM_V22
+c16d7a3 Fix base url for github pages in vite config
+fcc8a46 Restore orange accent color for icons and buttons
+71c0eb0 Build full color system around #1D3987 navy brand color
+c6c1dec Refine color palette for accessible medical UI
+f6f7635 Fix styling issues
+50d43a6 fix: make emergency button work and update number to 19999
+c5ed489 feat: update all primary colors to #1D3987 (primary blue)
+578104a Change doctors page stats numbers to primary (footer) color
+f838463 Change stats numbers color from accent to primary (footer color)
+ecbd859 Change Stats icons and numbers to orange accent
+cac6548 Change all DoctorsPage icons and stat numbers to orange accent
+e941e31 Change all DoctorsPage specialty icons to orange
+a9280b4 Make header nav links font-semibold for better visibility

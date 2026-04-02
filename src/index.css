@@ -16,128 +16,112 @@
     --section-space: clamp(4rem, 7vw, 6rem);
 
     /*
-     * CapitalMed Color System — Built around #1D3987 (Navy Blue)
-     * 60-30-10 Rule:
-     *   60% — Neutral light backgrounds (off-white, soft blue-gray)
-     *   30% — Navy blue family (primary, secondary, hero, footer)
-     *   10% — Medical teal accent for CTAs, icons, highlights
-     *
-     * #1D3987 = hsl(224, 63%, 33%)
-     * Shade scale:
-     *   50:  hsl(224, 60%, 97%)  — barely-blue white
-     *   100: hsl(224, 55%, 93%)  — light navy tint
-     *   200: hsl(224, 58%, 85%)  — soft blue
-     *   300: hsl(224, 60%, 72%)  — medium-light
-     *   400: hsl(224, 62%, 55%)  — medium
-     *   500: hsl(224, 63%, 44%)  — medium-dark (lighter brand)
-     *   600: hsl(224, 63%, 33%)  → #1D3987 BRAND
-     *   700: hsl(224, 65%, 24%)  — dark navy
-     *   800: hsl(224, 68%, 16%)  — very dark
-     *   900: hsl(224, 70%, 9%)   — near-black navy
-     *
-     * Accent: Medical Teal hsl(193, 68%, 42%)
+     * CapitalMed Color System V3 — Cyan & Orange Palette
+     * Primary (Cyan): #00B4E6 (hsl(193, 100%, 45%))
+     * Primary Dark: #0088AD (hsl(193, 100%, 33%))
+     * Primary Light: #E0F4FA (hsl(193, 58%, 94%))
+     * Accent (Orange): #F3A916 (hsl(40, 90%, 52%))
      */
 
-    /* Primary — #1D3987 Brand Navy */
-    --primary: 224 63% 33%;             /* #1D3987 exact */
+    /* Primary — Cyan Brand */
+    --primary: 193 100% 45%;            /* #00B4E6 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 224 60% 72%;       /* shade-300: hover tints */
-    --primary-dark: 224 65% 24%;        /* shade-700: active/pressed */
+    --primary-light: 193 58% 94%;       /* Pale background-ready tint */
+    --primary-dark: 193 100% 33%;        /* #0088AD for gradients */
 
-    /* Secondary — Darker Navy for hero/footer structure */
-    --secondary: 224 65% 22%;           /* shade-800 area */
+    /* Secondary — Deeper Cyan/Blue for structural elements */
+    --secondary: 193 100% 30%;
     --secondary-foreground: 0 0% 100%;
 
-    /* 60% — Backgrounds: very light navy-tinted whites */
-    --background: 224 40% 99%;          /* shade-50: barely perceptible tint */
-    --foreground: 224 40% 11%;          /* shade-900 area: deep navy text */
+    /* Backgrounds */
+    --background: 193 58% 99%;          /* Almost white with cyan tint */
+    --foreground: 200 40% 12%;          /* Dark gray-blue text */
 
-    --card: 0 0% 100%;                  /* Pure white cards */
-    --card-foreground: 224 40% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 200 40% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 40% 11%;
+    --popover-foreground: 200 40% 12%;
 
-    /* Muted — shade-50 area for alternate sections */
-    --muted: 224 45% 97%;               /* shade-50 */
-    --muted-foreground: 224 20% 45%;    /* readable mid-tone */
+    /* Muted */
+    --muted: 193 58% 94%;               /* Primary Light used as muted */
+    --muted-foreground: 193 40% 40%;
 
-    /* 10% Accent — Original Orange/Gold for buttons & icons */
-    --accent: 40 88% 50%;               /* #F3A916 orange-gold */
+    /* Accent — CTA Orange */
+    --accent: 40 90% 52%;               /* #F3A916 */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 68% 50%;           /* Clear medical red */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 224 25% 88%;              /* Soft navy-tinted border */
-    --input: 224 25% 91%;
-    --ring: 224 63% 33%;                /* Focus ring = brand color */
+    --border: 193 30% 90%;
+    --input: 193 30% 90%;
+    --ring: 193 100% 45%;
 
     --radius: 0.5rem;
 
-    /* Gradients — Navy family */
-    --gradient-hero: linear-gradient(150deg, hsl(224 63% 33%) 0%, hsl(224 65% 22%) 55%, hsl(224 68% 14%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(224 63% 33%) 0%, hsl(224 65% 22%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(40 88% 50%) 0%, hsl(40 88% 38%) 100%);
-    --gradient-light: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(224 45% 97%) 100%);
+    /* Gradients */
+    --gradient-hero: linear-gradient(150deg, hsl(193 100% 45%) 0%, hsl(193 100% 33%) 55%, hsl(193 100% 25%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(193 100% 45%) 0%, hsl(193 100% 33%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(40 90% 52%) 0%, hsl(40 90% 42%) 100%);
+    --gradient-light: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(193 58% 94%) 100%);
 
-    /* Shadows — navy-blue tinted, soft */
-    --shadow-sm: 0 1px 3px 0 rgba(29, 57, 135, 0.06);
-    --shadow-md: 0 4px 14px -2px rgba(29, 57, 135, 0.10);
-    --shadow-lg: 0 12px 28px -4px rgba(29, 57, 135, 0.12);
-    --shadow-xl: 0 20px 44px -8px rgba(29, 57, 135, 0.14);
+    /* Shadows */
+    --shadow-sm: 0 1px 3px 0 rgba(0, 180, 230, 0.06);
+    --shadow-md: 0 4px 14px -2px rgba(0, 180, 230, 0.10);
+    --shadow-lg: 0 12px 28px -4px rgba(0, 180, 230, 0.12);
+    --shadow-xl: 0 20px 44px -8px rgba(0, 180, 230, 0.14);
 
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 224 40% 11%;
-    --sidebar-primary: 224 63% 33%;
+    --sidebar-foreground: 200 40% 12%;
+    --sidebar-primary: 193 100% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 224 45% 96%;
-    --sidebar-accent-foreground: 224 40% 11%;
-    --sidebar-border: 224 25% 88%;
-    --sidebar-ring: 224 63% 33%;
+    --sidebar-accent: 193 58% 95%;
+    --sidebar-accent-foreground: 193 100% 45%;
+    --sidebar-border: 193 30% 90%;
+    --sidebar-ring: 193 100% 45%;
   }
 
   .dark {
-    /* Dark mode: Navy family, very dark backgrounds */
-    --background: 224 50% 8%;           /* Deep navy — shade-900 feel */
-    --foreground: 224 30% 93%;          /* Light navy-white text */
+    --background: 193 50% 8%;           /* Darkest cyan-black */
+    --foreground: 193 20% 95%;
 
-    --card: 224 45% 11%;                /* Slightly lighter card surface */
-    --card-foreground: 224 30% 93%;
+    --card: 193 40% 12%;
+    --card-foreground: 193 20% 95%;
 
-    --popover: 224 45% 11%;
-    --popover-foreground: 224 30% 93%;
+    --popover: 193 40% 12%;
+    --popover-foreground: 193 20% 95%;
 
-    --primary: 224 62% 55%;             /* shade-400: brighter navy for dark bg */
+    --primary: 193 100% 50%;            /* Brighter cyan for dark mode */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 224 60% 72%;       /* shade-300 */
-    --primary-dark: 224 63% 33%;        /* exact brand on dark */
+    --primary-light: 193 100% 40%;
+    --primary-dark: 193 100% 33%;
 
-    --secondary: 224 50% 30%;           /* shade-700 area: mid dark navy */
+    --secondary: 193 80% 25%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 224 35% 15%;               /* Dark muted surface */
-    --muted-foreground: 224 20% 60%;    /* Mid-light readable text */
+    --muted: 193 40% 18%;
+    --muted-foreground: 193 20% 65%;
 
-    --accent: 40 88% 54%;              /* Orange brighter on dark bg */
+    --accent: 40 90% 55%;               /* Orange pops on dark bg */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 54%;
+    --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 224 30% 20%;              /* Dark navy border */
-    --input: 224 30% 20%;
-    --ring: 224 62% 55%;
+    --border: 193 30% 20%;
+    --input: 193 30% 20%;
+    --ring: 193 100% 50%;
 
-    --sidebar-background: 224 50% 7%;
-    --sidebar-foreground: 224 30% 90%;
-    --sidebar-primary: 224 62% 55%;
+    --sidebar-background: 193 50% 7%;
+    --sidebar-foreground: 193 20% 92%;
+    --sidebar-primary: 193 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 224 35% 14%;
-    --sidebar-accent-foreground: 224 30% 90%;
-    --sidebar-border: 224 30% 18%;
-    --sidebar-ring: 224 62% 60%;
+    --sidebar-accent: 193 40% 15%;
+    --sidebar-accent-foreground: 193 20% 92%;
+    --sidebar-border: 193 30% 18%;
+    --sidebar-ring: 193 100% 55%;
   }
 }
 
@@ -273,7 +257,7 @@
   /* Premium Page Hero with wave divider */
   .page-hero {
     @apply relative overflow-hidden pb-20 pt-44 md:pb-24 md:pt-48;
-    background: linear-gradient(150deg, hsl(224, 63%, 33%) 0%, hsl(224, 65%, 22%) 55%, hsl(224, 68%, 14%) 100%);
+    background: linear-gradient(150deg, hsl(193 100% 45%) 0%, hsl(193 100% 33%) 55%, hsl(193 100% 25%) 100%);
   }
 
   .page-hero h1,
