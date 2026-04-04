@@ -29,13 +29,13 @@ const PartnershipsPage: React.FC = () => {
   ];
 
   const brandEntities = [
-    { icon: Landmark, color: 'from-accent to-[hsl(40,85%,35%)]', name: isAr ? 'القلعة فينتشرز' : 'ElKalaa Ventures', desc: isAr ? 'مجموعة صناعات في الصحة والتعليم والاستثمار' : 'Group of industries in health, education & investment' },
-    { icon: Activity, color: 'from-[hsl(193,100%,38%)] to-[hsl(193,100%,26%)]', name: isAr ? 'الشركة المصرية لخدمات الرعاية الصحية' : 'EHCS', desc: isAr ? 'الشركة المالكة لمشروع كابيتال ميد' : 'Egyptians for Health Care Services — Owner of CAPITALMED' },
-    { icon: GraduationCap, color: 'from-[hsl(193,100%,32%)] to-[hsl(193,100%,22%)]', name: isAr ? 'جامعة بدر بالقاهرة' : 'BUC – Badr University in Cairo', desc: isAr ? 'جامعة بدر — مدينة بدر، القاهرة' : 'Badr University in Cairo' },
-    { icon: Building2, color: 'from-secondary to-[hsl(193,100%,22%)]', name: 'CIRA', desc: isAr ? 'القاهرة للاستثمار والتطوير العقاري' : 'Cairo for Investment and Real Estate' },
-    { icon: Barcode, color: 'from-[hsl(193,100%,42%)] to-[hsl(193,100%,30%)]', name: 'GS1 Egypt', desc: isAr ? 'جي إس وان مصر — المعايير العالمية' : 'GS1 Egypt — Global Standards' },
-    { icon: Award, color: 'from-primary to-[hsl(193,100%,30%)]', name: isAr ? 'الجمعية المصرية للجودة في الرعاية الصحية' : 'Egyptian Society for Quality in Health Care', desc: isAr ? 'ESQua — الجودة في الرعاية الصحية' : 'ESQua – Quality in Health Care' },
-    { icon: BookOpen, color: 'from-accent to-[hsl(40,85%,33%)]', name: isAr ? 'مؤسسة المستقبل للتعليم والتدريب' : 'Futures Foundation', desc: isAr ? 'للتعليم والتدريب والتنمية' : 'Education Training & Development' },
+    { icon: Landmark, color: 'from-accent to-[hsl(23,100%,35%)]', name: isAr ? 'القلعة فينتشرز' : 'ElKalaa Ventures', desc: isAr ? 'مجموعة صناعات في الصحة والتعليم والاستثمار' : 'Group of industries in health, education & investment' },
+    { icon: Activity, color: 'from-[hsl(204,58%,38%)] to-[hsl(204,58%,26%)]', name: isAr ? 'الشركة المصرية لخدمات الرعاية الصحية' : 'EHCS', desc: isAr ? 'الشركة المالكة لمشروع كابيتال ميد' : 'Egyptians for Health Care Services — Owner of CAPITALMED' },
+    { icon: GraduationCap, color: 'from-[hsl(204,58%,32%)] to-[hsl(204,58%,22%)]', name: isAr ? 'جامعة بدر بالقاهرة' : 'BUC – Badr University in Cairo', desc: isAr ? 'جامعة بدر — مدينة بدر، القاهرة' : 'Badr University in Cairo' },
+    { icon: Building2, color: 'from-secondary to-[hsl(204,58%,22%)]', name: 'CIRA', desc: isAr ? 'القاهرة للاستثمار والتطوير العقاري' : 'Cairo for Investment and Real Estate' },
+    { icon: Barcode, color: 'from-[hsl(204,58%,42%)] to-[hsl(204,58%,30%)]', name: 'GS1 Egypt', desc: isAr ? 'جي إس وان مصر — المعايير العالمية' : 'GS1 Egypt — Global Standards' },
+    { icon: Award, color: 'from-primary to-[hsl(204,58%,30%)]', name: isAr ? 'الجمعية المصرية للجودة في الرعاية الصحية' : 'Egyptian Society for Quality in Health Care', desc: isAr ? 'ESQua — الجودة في الرعاية الصحية' : 'ESQua – Quality in Health Care' },
+    { icon: BookOpen, color: 'from-accent to-[hsl(23,100%,33%)]', name: isAr ? 'مؤسسة المستقبل للتعليم والتدريب' : 'Futures Foundation', desc: isAr ? 'للتعليم والتدريب والتنمية' : 'Education Training & Development' },
   ];
 
   return (

@@ -14,9 +14,9 @@ const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.08 } }
 const fadeUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };
 
 const COLORS = [
-  'hsl(193, 100%, 45%)', 'hsl(193, 100%, 33%)', 'hsl(40, 90%, 52%)',
-  'hsl(350, 65%, 50%)', 'hsl(193, 80%, 55%)', 'hsl(193, 70%, 50%)',
-  'hsl(193, 100%, 48%)', 'hsl(40, 80%, 48%)'
+  'hsl(204, 58%, 64%)', 'hsl(204, 58%, 44%)', 'hsl(23, 100%, 63%)',
+  'hsl(350, 65%, 50%)', 'hsl(204, 58%, 70%)', 'hsl(204, 58%, 55%)',
+  'hsl(204, 58%, 64%)', 'hsl(23, 100%, 55%)'
 ];
 
 const HealthcarePage: React.FC = () => {
@@ -185,7 +185,7 @@ const HealthcarePage: React.FC = () => {
                   <XAxis dataKey="country" tick={{ fontSize: 11 }} />
                   <YAxis tick={{ fontSize: 11 }} />
                   <Tooltip />
-                  <Bar dataKey="spending" fill="hsl(193, 100%, 45%)" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="spending" fill="hsl(204, 58%, 64%)" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </motion.div>
@@ -280,7 +280,7 @@ const HealthcarePage: React.FC = () => {
                 <PolarAngleAxis dataKey="metric" tick={{ fontSize: 10 }} />
                 <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
                 <Radar name={isAr ? 'المعيار الحالي' : 'Current Standard'} dataKey="current" stroke="hsl(350, 65%, 50%)" fill="hsl(350, 65%, 50%)" fillOpacity={0.2} />
-                <Radar name="CAPITALMED" dataKey="capitalmed" stroke="hsl(193, 100%, 45%)" fill="hsl(193, 100%, 45%)" fillOpacity={0.3} />
+                <Radar name="CAPITALMED" dataKey="capitalmed" stroke="hsl(204, 58%, 64%)" fill="hsl(204, 58%, 64%)" fillOpacity={0.3} />
                 <Legend wrapperStyle={{ direction: isAr ? 'rtl' : 'ltr' }} />
                 <Tooltip />
               </RadarChart>

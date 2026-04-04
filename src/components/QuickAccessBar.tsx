@@ -14,7 +14,7 @@ const QuickAccessBar: React.FC<QuickAccessBarProps> = ({ compact = false }) => {
 
   const actions = [
     { icon: Users, label: t('quick.bar.patients'), href: '/patient-portal', color: 'bg-secondary hover:bg-secondary/90 text-secondary-foreground' },
-    { icon: Stethoscope, label: t('quick.bar.doctors'), href: '/doctors', color: 'text-primary-foreground', gradient: 'linear-gradient(135deg, hsl(193 100% 56%), hsl(193 100% 45%))' },
+    { icon: Stethoscope, label: t('quick.bar.doctors'), href: '/doctors', color: 'text-primary-foreground', gradient: 'linear-gradient(135deg, hsl(204 58% 70%), hsl(204 58% 64%))' },
     { icon: Siren, label: t('quick.bar.emergency'), href: 'tel:16999', color: 'bg-destructive hover:bg-destructive/90 text-destructive-foreground', isExternal: true },
   ];
 

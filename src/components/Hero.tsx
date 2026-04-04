@@ -53,11 +53,11 @@ const Hero: React.FC = () => {
             transition={{ duration: 1.5, ease: 'easeInOut' }}
           />
         ))}
-        {/* Updated to 193 cyan hue for V3 with high transparency */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(193,100%,10%)]/60 via-[hsl(193,100%,15%)]/30 to-[hsl(193,100%,20%)]/5" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(193,100%,8%)]/40 to-transparent" />
-        {/* Subtle accent glow with cyan */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_40%,hsl(193_100%_40%_/_0.15)_0%,transparent_70%)]" />
+        {/* Updated to 204 blue hue for V3 with high transparency */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(204,58%,10%)]/60 via-[hsl(204,58%,15%)]/30 to-[hsl(204,58%,20%)]/5" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(204,58%,8%)]/40 to-transparent" />
+        {/* Subtle accent glow with blue */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_40%,hsl(204,58%,40%_/_0.15)_0%,transparent_70%)]" />
       </div>
 
       {/* Content */}
