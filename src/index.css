@@ -16,112 +16,112 @@
     --section-space: clamp(4rem, 7vw, 6rem);
 
     /*
-     * CapitalMed Color System V3 — Blue & Orange Palette
-     * Primary (Blue): #6FAED9 (hsl(204, 58%, 64%))
-     * Primary Dark: #4B8DBB (hsl(204, 45%, 51%))
-     * Primary Light: #EBF3F8 (hsl(204, 45%, 95%))
-     * Accent (Orange): #FF8C42 (hsl(23, 100%, 63%))
+     * CapitalMed Color System V5 — Soft Blue & Peach Palette
+     * Primary (Blue): #8ECED6 (hsl(187, 46%, 70%))
+     * Primary Dark: #5BB0BB (hsl(187, 46%, 55%))
+     * Primary Light: #ECF5F6 (hsl(187, 30%, 95%))
+     * Accent (Orange/Peach): #F7B267 (hsl(31, 90%, 69%))
      */
 
     /* Primary — Blue Brand */
-    --primary: 204 58% 64%;            /* #6FAED9 */
+    --primary: 187 46% 70%;            /* #8ECED6 */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 204 45% 95%;       /* Pale background-ready tint */
-    --primary-dark: 204 58% 44%;        /* Darker version for depth */
+    --primary-light: 187 30% 95%;       /* Pale background-ready tint */
+    --primary-dark: 187 46% 50%;        /* Darker version for depth */
 
     /* Secondary — Deeper Blue for structural elements */
-    --secondary: 204 60% 35%;
+    --secondary: 187 50% 35%;
     --secondary-foreground: 0 0% 100%;
 
     /* Backgrounds */
-    --background: 204 45% 99%;          /* Almost white with blue tint */
-    --foreground: 204 40% 12%;          /* Dark gray-blue text */
+    --background: 187 30% 99%;          /* Almost white with blue tint */
+    --foreground: 187 40% 12%;          /* Dark blue-gray text */
 
     --card: 0 0% 100%;
-    --card-foreground: 204 40% 12%;
+    --card-foreground: 187 40% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 204 40% 12%;
+    --popover-foreground: 187 40% 12%;
 
     /* Muted */
-    --muted: 204 45% 95%;               /* Primary Light used as muted */
-    --muted-foreground: 204 40% 40%;
+    --muted: 187 30% 95%;               /* Primary Light used as muted */
+    --muted-foreground: 187 40% 40%;
 
     /* Accent — CTA Orange */
-    --accent: 23 100% 63%;               /* #FF8C42 */
-    --accent-foreground: 0 0% 100%;
+    --accent: 31 90% 69%;               /* #F7B267 */
+    --accent-foreground: 0 0% 0%;       /* Dark text on light orange */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 204 30% 90%;
-    --input: 204 30% 90%;
-    --ring: 204 58% 64%;
+    --border: 187 30% 90%;
+    --input: 187 30% 90%;
+    --ring: 187 46% 70%;
 
     --radius: 0.5rem;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(150deg, hsl(204 58% 64%) 0%, hsl(204 58% 44%) 55%, hsl(204 58% 30%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(204 58% 64%) 0%, hsl(204 58% 44%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(23 100% 63%) 0%, hsl(23 100% 45%) 100%);
-    --gradient-light: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(204 45% 95%) 100%);
+    --gradient-hero: linear-gradient(150deg, hsl(187 46% 70%) 0%, hsl(187 46% 50%) 55%, hsl(187 46% 35%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(187 46% 70%) 0%, hsl(187 46% 50%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(31 90% 69%) 0%, hsl(31 90% 55%) 100%);
+    --gradient-light: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(187 30% 95%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px 0 rgba(111, 174, 217, 0.08);
-    --shadow-md: 0 4px 14px -2px rgba(111, 174, 217, 0.12);
-    --shadow-lg: 0 12px 28px -4px rgba(111, 174, 217, 0.15);
-    --shadow-xl: 0 20px 44px -8px rgba(111, 174, 217, 0.18);
+    --shadow-sm: 0 1px 3px 0 rgba(142, 206, 214, 0.08);
+    --shadow-md: 0 4px 14px -2px rgba(142, 206, 214, 0.12);
+    --shadow-lg: 0 12px 28px -4px rgba(142, 206, 214, 0.15);
+    --shadow-xl: 0 20px 44px -8px rgba(142, 206, 214, 0.18);
 
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 204 40% 12%;
-    --sidebar-primary: 204 58% 64%;
+    --sidebar-foreground: 187 40% 12%;
+    --sidebar-primary: 187 46% 70%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 204 45% 96%;
-    --sidebar-accent-foreground: 204 58% 64%;
-    --sidebar-border: 204 30% 90%;
-    --sidebar-ring: 204 58% 64%;
+    --sidebar-accent: 187 30% 96%;
+    --sidebar-accent-foreground: 187 46% 70%;
+    --sidebar-border: 187 30% 90%;
+    --sidebar-ring: 187 46% 70%;
   }
 
   .dark {
-    --background: 204 50% 8%;           /* Darkest blue-black */
-    --foreground: 204 20% 95%;
+    --background: 187 50% 8%;           /* Darkest blue-black */
+    --foreground: 187 20% 95%;
 
-    --card: 204 40% 12%;
-    --card-foreground: 204 20% 95%;
+    --card: 187 40% 12%;
+    --card-foreground: 187 20% 95%;
 
-    --popover: 204 40% 12%;
-    --popover-foreground: 204 20% 95%;
+    --popover: 187 40% 12%;
+    --popover-foreground: 187 20% 95%;
 
-    --primary: 204 70% 70%;            /* Brighter blue for dark mode */
+    --primary: 187 60% 75%;            /* Brighter blue for dark mode */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 204 70% 60%;
-    --primary-dark: 204 70% 45%;
+    --primary-light: 187 60% 65%;
+    --primary-dark: 187 60% 50%;
 
-    --secondary: 204 80% 25%;
+    --secondary: 187 80% 25%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 204 40% 18%;
-    --muted-foreground: 204 20% 65%;
+    --muted: 187 40% 18%;
+    --muted-foreground: 187 20% 65%;
 
-    --accent: 23 100% 65%;               /* Orange pops on dark bg */
-    --accent-foreground: 0 0% 100%;
+    --accent: 31 90% 70%;               /* Peach pops on dark bg */
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 204 30% 20%;
-    --input: 204 30% 20%;
-    --ring: 204 70% 70%;
+    --border: 187 30% 20%;
+    --input: 187 30% 20%;
+    --ring: 187 60% 75%;
 
-    --sidebar-background: 204 50% 7%;
-    --sidebar-foreground: 204 20% 92%;
-    --sidebar-primary: 204 70% 70%;
+    --sidebar-background: 187 50% 7%;
+    --sidebar-foreground: 187 20% 92%;
+    --sidebar-primary: 187 60% 75%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 204 40% 15%;
-    --sidebar-accent-foreground: 204 20% 92%;
-    --sidebar-border: 204 30% 18%;
-    --sidebar-ring: 204 70% 75%;
+    --sidebar-accent: 187 40% 15%;
+    --sidebar-accent-foreground: 187 20% 92%;
+    --sidebar-border: 187 30% 18%;
+    --sidebar-ring: 187 60% 80%;
   }
 }
 
