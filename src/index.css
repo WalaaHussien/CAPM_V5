@@ -23,11 +23,11 @@
      * Accent (Orange): #FF8C42 (hsl(24, 100%, 63%))
      */
 
-    /* Primary — Blue Brand */
-    --primary: 204 59% 64%;            /* #6FAED9 */
+    /* Primary — Blue Brand (#8ECED6) */
+    --primary: 187 45% 70%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 204 59% 95%;       /* Pale background-ready tint */
-    --primary-dark: 204 59% 51%;        /* Darker blue for gradients */
+    --primary-light: 187 45% 95%;       /* Pale background-ready tint */
+    --primary-dark: 187 45% 55%;        /* Darker blue for gradients */
 
     /* Secondary — Deeper Blue for structural elements */
     --secondary: 204 65% 35%;
@@ -47,8 +47,8 @@
     --muted: 204 59% 95%;               /* Primary Light used as muted */
     --muted-foreground: 204 40% 45%;
 
-    /* Accent — CTA Orange */
-    --accent: 24 100% 63%;               /* #FF8C42 */
+    /* Accent — CTA Orange (#F7B267) */
+    --accent: 31 90% 69%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -93,10 +93,10 @@
     --popover: 204 40% 12%;
     --popover-foreground: 204 20% 95%;
 
-    --primary: 204 59% 68%;            /* Slightly brighter blue for dark mode */
+    --primary: 187 50% 75%;            /* Slightly brighter blue for dark mode */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 204 59% 55%;
-    --primary-dark: 204 59% 45%;
+    --primary-light: 187 50% 60%;
+    --primary-dark: 187 50% 50%;
 
     --secondary: 204 80% 25%;
     --secondary-foreground: 0 0% 100%;
@@ -104,7 +104,7 @@
     --muted: 204 40% 18%;
     --muted-foreground: 204 20% 65%;
 
-    --accent: 24 100% 63%;               /* Orange pops on dark bg */
+    --accent: 31 90% 69%;               /* Orange pops on dark bg */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
@@ -257,7 +257,7 @@
   /* Premium Page Hero with wave divider — Matched to Footer Style */
   .page-hero {
     @apply relative overflow-hidden pb-20 pt-44 md:pb-24 md:pt-48;
-    background: linear-gradient(150deg, hsl(204, 59%, 64%) 0%, hsl(204, 59%, 45%) 55%, hsl(204, 59%, 30%) 100%);
+    background: linear-gradient(150deg, hsl(187, 45%, 70%) 0%, hsl(187, 45%, 55%) 55%, hsl(187, 45%, 40%) 100%);
   }
 
   .page-hero h1,
