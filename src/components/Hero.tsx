@@ -53,11 +53,11 @@ const Hero: React.FC = () => {
             transition={{ duration: 1.5, ease: 'easeInOut' }}
           />
         ))}
-        {/* Updated to match footer's deep blue brand palette with high transparency */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(204,59%,30%)]/65 via-[hsl(204,59%,40%)]/35 to-[hsl(204,59%,50%)]/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(204,59%,25%)]/45 to-transparent" />
+        {/* Updated to match brand palette using CSS variables */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--secondary))]/65 via-[hsl(var(--primary-dark))]/35 to-[hsl(var(--primary))]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--secondary))]/45 to-transparent" />
         {/* Subtle blue accent glow matched to brand palette */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_40%,hsl(204_59%_64%_/_0.15)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_40%,hsl(var(--primary)/0.15)_0%,transparent_70%)]" />
       </div>
 
       {/* Content */}
